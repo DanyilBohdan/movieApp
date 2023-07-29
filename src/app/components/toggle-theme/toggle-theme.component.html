@@ -1,0 +1,5 @@
+<div class="toggle-theme">
+  <ion-icon name="sunny" size="large" *ngIf="!isDark"></ion-icon>
+  <ion-icon name="moon" size="large" *ngIf="isDark"></ion-icon>
+  <ion-toggle (ionChange)="changeThem($event)" [checked]="isDark"></ion-toggle>
+</div>
